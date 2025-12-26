@@ -425,15 +425,7 @@ The project follows all specified requirements:
 - Loading states
 - Footer with API credits
 
-## License
+## Screenshot
+<img width="1284" height="687" alt="image" src="https://github.com/user-attachments/assets/3be4ba5e-3ba3-4ae2-90a1-462ced685f9e" />
 
-This project is created for educational purposes.
-
-## Author
-
-Created as part of a web development project.
-
-## Version
-
-Version 1.0.0
 
