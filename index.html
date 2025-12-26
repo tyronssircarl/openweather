@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="openWeather-container">
+        <div class="openWeather-header">
+            <h1 class="openWeather-title">Weather App</h1>
+        </div>
+        
+        <div class="openWeather-main-content">
+            <div class="openWeather-left-section">
+                <div class="openWeather-search-section">
+                    <div class="openWeather-search-container">
+                        <div class="openWeather-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="openWeatherSearchInput" 
+                                class="openWeather-search-input" 
+                                placeholder="Enter city name..."
+                                autocomplete="off"
+                            >
+                            <div class="openWeather-suggestions" id="openWeatherSuggestions" style="display: none;">
+                            </div>
+                        </div>
+                        <button 
+                            id="openWeatherSearchBtn" 
+                            class="openWeather-btn openWeather-btn-search"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <div class="openWeather-loading" id="openWeatherLoading" style="display: none;">
+                    <div class="openWeather-spinner"></div>
+                    <p class="openWeather-loading-text">Loading...</p>
+                </div>
+
+                <div class="openWeather-error" id="openWeatherError" style="display: none;">
+                </div>
+            </div>
+
+            <div class="openWeather-right-section">
+                <div class="openWeather-results" id="openWeatherResults" style="display: none;">
+                    <div class="openWeather-card">
+                        <div class="openWeather-card-header">
+                            <h2 class="openWeather-city-name" id="openWeatherCityName"></h2>
+                            <p class="openWeather-country" id="openWeatherCountry"></p>
+                        </div>
+                        <div class="openWeather-card-body">
+                            <div class="openWeather-main-info">
+                                <div class="openWeather-temperature" id="openWeatherTemperature"></div>
+                                <div class="openWeather-description" id="openWeatherDescription"></div>
+                            </div>
+                            <div class="openWeather-details">
+                                <div class="openWeather-detail-item">
+                                    <span class="openWeather-detail-label">Feels Like</span>
+                                    <span class="openWeather-detail-value" id="openWeatherFeelsLike"></span>
+                                </div>
+                                <div class="openWeather-detail-item">
+                                    <span class="openWeather-detail-label">Humidity</span>
+                                    <span class="openWeather-detail-value" id="openWeatherHumidity"></span>
+                                </div>
+                                <div class="openWeather-detail-item">
+                                    <span class="openWeather-detail-label">Wind Speed</span>
+                                    <span class="openWeather-detail-value" id="openWeatherWindSpeed"></span>
+                                </div>
+                                <div class="openWeather-detail-item">
+                                    <span class="openWeather-detail-label">Pressure</span>
+                                    <span class="openWeather-detail-value" id="openWeatherPressure"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="openWeather-footer">
+            <p class="openWeather-footer-text">API Used OpenWeather API</p>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
